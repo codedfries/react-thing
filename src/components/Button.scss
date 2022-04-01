@@ -1,0 +1,46 @@
+$hover-brightness: 1.2;
+
+.button {
+	width: auto;
+	min-width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 32px;
+	border: none;
+	border-radius: 5px;
+	transition: 0.3s ease-in;
+	cursor: pointer;
+
+	&__text {
+		font-weight: 700;
+	}
+
+	&--rounded {
+		border-radius: 50px;
+	}
+
+	&--block {
+		width: 100%;
+	}
+
+	&--sm {
+		height: 35px;
+	}
+
+	&--md {
+		height: 50px;
+	}
+
+	&--lg {
+		height: 75px;
+	}
+
+	&--outlined {
+		border: 2px soild;
+	}
+
+	&:hover {
+		filter: brightness($hover-brightness);
+	}
+}
